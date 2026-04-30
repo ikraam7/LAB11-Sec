@@ -42,7 +42,7 @@ C:\Lab_Frida_Root_Bypass
 │   └── bypass_native.js
 │
 ├── captures
-│   ├── 01_frida_version.jpg
+│   ├── 01_frida_version.png
 │   ├── 02_adb_devices.jpg
 │   ├── 03_android_architecture.jpg
 │   ├── 04_push_frida_server.jpg
