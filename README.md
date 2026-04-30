@@ -43,7 +43,7 @@ C:\Lab_Frida_Root_Bypass
 │
 ├── captures
 │   ├── 01_frida_version.png
-│   ├── 02_adb_devices.jpg
+│   ├── 02_adb_devices.png
 │   ├── 03_android_architecture.jpg
 │   ├── 04_push_frida_server.jpg
 │   ├── 05_frida_ps_apps.jpg
@@ -117,7 +117,7 @@ emulator-5554    device
 Cette commande permet de vérifier que l’émulateur Android est bien connecté et reconnu par ADB.
 
 
-![Vérification de la connexion ADB](captures/02_adb_devices.jpg)
+![Vérification de la connexion ADB](captures/02_adb_devices.png)
 
 ---
 
