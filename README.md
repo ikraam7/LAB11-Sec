@@ -281,8 +281,9 @@ ROOTED*
 
 Cela signifie que l’application détecte que l’environnement Android est rooté.
 
-
-![Détection root avant bypass](captures/07_before_bypass_root_detected.jpg)
+<p align="center">
+  <img src="captures/07_before_bypass_root_detected.jpg" alt="Détection root avant bypass" width="320">
+</p>
 
 ---
 
@@ -384,7 +385,10 @@ Le contrôle restant positif est :
 
 Ce résultat montre que le bypass Java fonctionne partiellement. Frida intercepte plusieurs vérifications, mais un contrôle spécifique continue de détecter le root.
 
-![Résultat après bypass Java](captures/09_after_java_bypass.jpg)
+<p align="center">
+  <img src="captures/09_after_java_bypass.jpg" alt="Résultat après bypass Java" width="320">
+</p>
+
 
 ---
 
@@ -504,8 +508,9 @@ Le contrôle restant positif est :
 
 Cela montre que le bypass est partiel. Les hooks Java et natifs permettent d’intercepter plusieurs mécanismes de détection, mais un contrôle spécifique reste actif.
 
-
-![Résultat après bypass Java et natif](captures/12_after_native_bypass.jpg)
+<p align="center">
+  <img src="captures/12_after_native_bypass.jpg" alt="Résultat après bypass Java et natif" width="320">
+</p>
 
 ---
 
