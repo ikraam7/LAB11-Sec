@@ -79,11 +79,6 @@ Résultat attendu :
 
 Cette étape permet de confirmer que le client Frida est disponible côté PC.
 
-Emplacement de la capture :
-
-```markdown
-![Vérification de la version Frida](captures/01_frida_version.jpg)
-```
 
 ![Vérification de la version Frida](captures/01_frida_version.jpg)
 
@@ -115,11 +110,6 @@ emulator-5554    device
 
 Cette commande permet de vérifier que l’émulateur Android est bien connecté et reconnu par ADB.
 
-Emplacement de la capture :
-
-```markdown
-![Vérification de la connexion ADB](captures/02_adb_devices.jpg)
-```
 
 ![Vérification de la connexion ADB](captures/02_adb_devices.jpg)
 
@@ -175,11 +165,6 @@ x86_64
 
 L’architecture de l’émulateur est donc `x86_64`. Le fichier `frida-server` utilisé doit correspondre à cette architecture.
 
-Emplacement de la capture :
-
-```markdown
-![Architecture Android](captures/03_android_architecture.jpg)
-```
 
 ![Architecture Android](captures/03_android_architecture.jpg)
 
@@ -209,11 +194,6 @@ Ensuite, les permissions d’exécution ont été ajoutées :
 
 Cette étape permet de rendre `frida-server` exécutable sur l’émulateur Android.
 
-Emplacement de la capture :
-
-```markdown
-![Déploiement de frida-server](captures/04_push_frida_server.jpg)
-```
 
 ![Déploiement de frida-server](captures/04_push_frida_server.jpg)
 
@@ -237,11 +217,6 @@ frida-ps -Uai
 
 Cette commande permet de lister les applications Android visibles par Frida.
 
-Emplacement de la capture :
-
-```markdown
-![Applications visibles par Frida](captures/05_frida_ps_apps.jpg)
-```
 
 ![Applications visibles par Frida](captures/05_frida_ps_apps.jpg)
 
@@ -281,11 +256,6 @@ Le package cible utilisé dans les commandes Frida est donc :
 com.scottyab.rootbeer.sample
 ```
 
-Emplacement de la capture :
-
-```markdown
-![Identification du package RootBeer](captures/06_rootbeer_package.jpg)
-```
 
 ![Identification du package RootBeer](captures/06_rootbeer_package.jpg)
 
@@ -311,11 +281,6 @@ ROOTED*
 
 Cela signifie que l’application détecte que l’environnement Android est rooté.
 
-Emplacement de la capture :
-
-```markdown
-![Détection root avant bypass](captures/07_before_bypass_root_detected.jpg)
-```
 
 ![Détection root avant bypass](captures/07_before_bypass_root_detected.jpg)
 
@@ -395,11 +360,6 @@ Après avoir cliqué sur le bouton de test dans l’application, Frida intercept
 
 Ces logs montrent que le script Frida intercepte correctement les appels Java vers `File.exists()`.
 
-Emplacement de la capture :
-
-```markdown
-![Logs du bypass Java avec Frida](captures/08_frida_java_bypass_logs.jpg)
-```
 
 ![Logs du bypass Java avec Frida](captures/08_frida_java_bypass_logs.jpg)
 
@@ -423,12 +383,6 @@ Le contrôle restant positif est :
 ```
 
 Ce résultat montre que le bypass Java fonctionne partiellement. Frida intercepte plusieurs vérifications, mais un contrôle spécifique continue de détecter le root.
-
-Emplacement de la capture :
-
-```markdown
-![Résultat après bypass Java](captures/09_after_java_bypass.jpg)
-```
 
 ![Résultat après bypass Java](captures/09_after_java_bypass.jpg)
 
@@ -461,11 +415,6 @@ readlink()
 
 Ces fonctions natives peuvent être utilisées pour vérifier l’existence de fichiers liés au root au niveau système.
 
-Emplacement de la capture :
-
-```markdown
-![Traçage des appels natifs](captures/10_frida_trace_native_calls.jpg)
-```
 
 ![Traçage des appels natifs](captures/10_frida_trace_native_calls.jpg)
 
@@ -531,11 +480,6 @@ Résultat attendu dans PowerShell :
 
 Ces logs montrent que les fonctions natives ont été interceptées par Frida.
 
-Emplacement de la capture :
-
-```markdown
-![Logs du bypass natif](captures/11_native_bypass_logs.jpg)
-```
 
 ![Logs du bypass natif](captures/11_native_bypass_logs.jpg)
 
@@ -560,11 +504,6 @@ Le contrôle restant positif est :
 
 Cela montre que le bypass est partiel. Les hooks Java et natifs permettent d’intercepter plusieurs mécanismes de détection, mais un contrôle spécifique reste actif.
 
-Emplacement de la capture :
-
-```markdown
-![Résultat après bypass Java et natif](captures/12_after_native_bypass.jpg)
-```
 
 ![Résultat après bypass Java et natif](captures/12_after_native_bypass.jpg)
 
