@@ -42,18 +42,18 @@ C:\Lab_Frida_Root_Bypass
 │   └── bypass_native.js
 │
 ├── captures
-│   ├── 01_frida_version.png
-│   ├── 02_adb_devices.png
-│   ├── 03_android_architecture.png
-│   ├── 04_push_frida_server.png
-│   ├── 05_frida_ps_apps.png
-│   ├── 06_rootbeer_package.png
-│   ├── 07_before_bypass_root_detected.png
-│   ├── 08_frida_java_bypass_logs.png
-│   ├── 09_after_java_bypass.png
-│   ├── 10_frida_trace_native_calls.png
-│   ├── 11_native_bypass_logs.png
-│   └── 12_after_native_bypass.png
+│   ├── 01_frida_version.jpg
+│   ├── 02_adb_devices.jpg
+│   ├── 03_android_architecture.jpg
+│   ├── 04_push_frida_server.jpg
+│   ├── 05_frida_ps_apps.jpg
+│   ├── 06_rootbeer_package.jpg
+│   ├── 07_before_bypass_root_detected.jpg
+│   ├── 08_frida_java_bypass_logs.jpg
+│   ├── 09_after_java_bypass.jpg
+│   ├── 10_frida_trace_native_calls.jpg
+│   ├── 11_native_bypass_logs.jpg
+│   └── 12_after_native_bypass.jpg
 │
 └── README.md
 ```
@@ -82,10 +82,10 @@ Cette étape permet de confirmer que le client Frida est disponible côté PC.
 Emplacement de la capture :
 
 ```markdown
-![Vérification de la version Frida](captures/01_frida_version.png)
+![Vérification de la version Frida](captures/01_frida_version.jpg)
 ```
 
-![Vérification de la version Frida](captures/01_frida_version.png)
+![Vérification de la version Frida](captures/01_frida_version.jpg)
 
 ---
 
@@ -118,10 +118,10 @@ Cette commande permet de vérifier que l’émulateur Android est bien connecté
 Emplacement de la capture :
 
 ```markdown
-![Vérification de la connexion ADB](captures/02_adb_devices.png)
+![Vérification de la connexion ADB](captures/02_adb_devices.jpg)
 ```
 
-![Vérification de la connexion ADB](captures/02_adb_devices.png)
+![Vérification de la connexion ADB](captures/02_adb_devices.jpg)
 
 ---
 
@@ -178,10 +178,10 @@ L’architecture de l’émulateur est donc `x86_64`. Le fichier `frida-server` 
 Emplacement de la capture :
 
 ```markdown
-![Architecture Android](captures/03_android_architecture.png)
+![Architecture Android](captures/03_android_architecture.jpg)
 ```
 
-![Architecture Android](captures/03_android_architecture.png)
+![Architecture Android](captures/03_android_architecture.jpg)
 
 ---
 
@@ -212,10 +212,10 @@ Cette étape permet de rendre `frida-server` exécutable sur l’émulateur Andr
 Emplacement de la capture :
 
 ```markdown
-![Déploiement de frida-server](captures/04_push_frida_server.png)
+![Déploiement de frida-server](captures/04_push_frida_server.jpg)
 ```
 
-![Déploiement de frida-server](captures/04_push_frida_server.png)
+![Déploiement de frida-server](captures/04_push_frida_server.jpg)
 
 ---
 
@@ -240,10 +240,10 @@ Cette commande permet de lister les applications Android visibles par Frida.
 Emplacement de la capture :
 
 ```markdown
-![Applications visibles par Frida](captures/05_frida_ps_apps.png)
+![Applications visibles par Frida](captures/05_frida_ps_apps.jpg)
 ```
 
-![Applications visibles par Frida](captures/05_frida_ps_apps.png)
+![Applications visibles par Frida](captures/05_frida_ps_apps.jpg)
 
 ---
 
@@ -284,10 +284,10 @@ com.scottyab.rootbeer.sample
 Emplacement de la capture :
 
 ```markdown
-![Identification du package RootBeer](captures/06_rootbeer_package.png)
+![Identification du package RootBeer](captures/06_rootbeer_package.jpg)
 ```
 
-![Identification du package RootBeer](captures/06_rootbeer_package.png)
+![Identification du package RootBeer](captures/06_rootbeer_package.jpg)
 
 ---
 
@@ -314,10 +314,10 @@ Cela signifie que l’application détecte que l’environnement Android est roo
 Emplacement de la capture :
 
 ```markdown
-![Détection root avant bypass](captures/07_before_bypass_root_detected.png)
+![Détection root avant bypass](captures/07_before_bypass_root_detected.jpg)
 ```
 
-![Détection root avant bypass](captures/07_before_bypass_root_detected.png)
+![Détection root avant bypass](captures/07_before_bypass_root_detected.jpg)
 
 ---
 
@@ -398,10 +398,10 @@ Ces logs montrent que le script Frida intercepte correctement les appels Java ve
 Emplacement de la capture :
 
 ```markdown
-![Logs du bypass Java avec Frida](captures/08_frida_java_bypass_logs.png)
+![Logs du bypass Java avec Frida](captures/08_frida_java_bypass_logs.jpg)
 ```
 
-![Logs du bypass Java avec Frida](captures/08_frida_java_bypass_logs.png)
+![Logs du bypass Java avec Frida](captures/08_frida_java_bypass_logs.jpg)
 
 ---
 
@@ -427,10 +427,10 @@ Ce résultat montre que le bypass Java fonctionne partiellement. Frida intercept
 Emplacement de la capture :
 
 ```markdown
-![Résultat après bypass Java](captures/09_after_java_bypass.png)
+![Résultat après bypass Java](captures/09_after_java_bypass.jpg)
 ```
 
-![Résultat après bypass Java](captures/09_after_java_bypass.png)
+![Résultat après bypass Java](captures/09_after_java_bypass.jpg)
 
 ---
 
@@ -464,10 +464,10 @@ Ces fonctions natives peuvent être utilisées pour vérifier l’existence de f
 Emplacement de la capture :
 
 ```markdown
-![Traçage des appels natifs](captures/10_frida_trace_native_calls.png)
+![Traçage des appels natifs](captures/10_frida_trace_native_calls.jpg)
 ```
 
-![Traçage des appels natifs](captures/10_frida_trace_native_calls.png)
+![Traçage des appels natifs](captures/10_frida_trace_native_calls.jpg)
 
 ---
 
@@ -534,10 +534,10 @@ Ces logs montrent que les fonctions natives ont été interceptées par Frida.
 Emplacement de la capture :
 
 ```markdown
-![Logs du bypass natif](captures/11_native_bypass_logs.png)
+![Logs du bypass natif](captures/11_native_bypass_logs.jpg)
 ```
 
-![Logs du bypass natif](captures/11_native_bypass_logs.png)
+![Logs du bypass natif](captures/11_native_bypass_logs.jpg)
 
 ---
 
@@ -563,10 +563,10 @@ Cela montre que le bypass est partiel. Les hooks Java et natifs permettent d’i
 Emplacement de la capture :
 
 ```markdown
-![Résultat après bypass Java et natif](captures/12_after_native_bypass.png)
+![Résultat après bypass Java et natif](captures/12_after_native_bypass.jpg)
 ```
 
-![Résultat après bypass Java et natif](captures/12_after_native_bypass.png)
+![Résultat après bypass Java et natif](captures/12_after_native_bypass.jpg)
 
 ---
 
