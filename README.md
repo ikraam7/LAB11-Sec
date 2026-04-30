@@ -699,6 +699,6 @@ Ce résultat est important, car il montre qu’une détection root robuste repos
 
 Réalisé par : Ikram Laabouki
 
-Module : Sécurité des applications mobiles
+Module : Sécurité des Applications Mobiles
 
 Établissement : ENSA Marrakech
