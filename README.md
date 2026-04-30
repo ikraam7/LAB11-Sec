@@ -257,7 +257,7 @@ com.scottyab.rootbeer.sample
 ```
 
 
-![Identification du package RootBeer](captures/06_rootbeer_package.jpg)
+![Identification du package RootBeer](captures/06_package_name.jpg)
 
 ---
 
