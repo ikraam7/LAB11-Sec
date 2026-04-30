@@ -79,8 +79,14 @@ Résultat attendu :
 
 Cette étape permet de confirmer que le client Frida est disponible côté PC.
 
+<p align="center">
+  <img src="./captures/01_frida_version.png" alt="Vérification de la version Frida" width="700">
+</p>
 
-![Vérification de la version Frida](captures/01_frida_version.png)
+<p align="center">
+  <em>Figure 1 — Vérification de la version Frida côté PC.</em>
+</p>
+
 
 ---
 
