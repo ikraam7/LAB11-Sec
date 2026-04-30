@@ -256,7 +256,6 @@ Le package cible utilisé dans les commandes Frida est donc :
 com.scottyab.rootbeer.sample
 ```
 
-
 ![Identification du package RootBeer](captures/06_package_name.jpg)
 
 ---
