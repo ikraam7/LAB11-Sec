@@ -695,7 +695,7 @@ Ce résultat est important, car il montre qu’une détection root robuste repos
 
 ---
 
-## 22. Auteur
+## 22. Auteure
 
 Réalisé par : Ikram Laabouki
 
