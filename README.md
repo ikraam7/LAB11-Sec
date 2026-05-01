@@ -79,13 +79,7 @@ Résultat attendu :
 
 Cette étape permet de confirmer que le client Frida est disponible côté PC.
 
-<p align="center">
-  <img src="captures/01_frida_version.png" alt="Vérification de la version Frida" width="700">
-</p>
-
-<p align="center">
-  <em>Figure 1 — Vérification de la version Frida côté PC.</em>
-</p>
+<img width="970" alt="01_frida_version" src="https://github.com/user-attachments/assets/9c9af744-95a2-4d78-9a9c-ff4646b645c7" />
 
 
 ---
@@ -117,7 +111,8 @@ emulator-5554    device
 Cette commande permet de vérifier que l’émulateur Android est bien connecté et reconnu par ADB.
 
 
-![Vérification de la connexion ADB](captures/02_adb_devices.png)
+<img width="990" alt="02_adb_devices" src="https://github.com/user-attachments/assets/46ae3f42-9bf8-4ff0-85c0-ddfc10a38702" />
+
 
 ---
 
@@ -172,7 +167,8 @@ x86_64
 L’architecture de l’émulateur est donc `x86_64`. Le fichier `frida-server` utilisé doit correspondre à cette architecture.
 
 
-![Architecture Android](captures/03_android_architecture.jpg)
+<img width="982" alt="03_android_architecture" src="https://github.com/user-attachments/assets/d59b03f5-6bb8-4482-b106-06a7f0d67001" />
+
 
 ---
 
@@ -201,7 +197,8 @@ Ensuite, les permissions d’exécution ont été ajoutées :
 Cette étape permet de rendre `frida-server` exécutable sur l’émulateur Android.
 
 
-![Déploiement de frida-server](captures/04_push_frida_server.jpg)
+<img width="982" alt="04_push_frida_server" src="https://github.com/user-attachments/assets/c30a10c6-b4bb-4a46-a9d7-a04a53d00c2f" />
+
 
 ---
 
@@ -224,7 +221,8 @@ frida-ps -Uai
 Cette commande permet de lister les applications Android visibles par Frida.
 
 
-![Applications visibles par Frida](captures/05_frida_ps_apps.jpg)
+<img width="875" alt="05_frida_ps_apps" src="https://github.com/user-attachments/assets/391fb152-0691-4ba1-941e-04499f371aee" />
+
 
 ---
 
@@ -262,7 +260,8 @@ Le package cible utilisé dans les commandes Frida est donc :
 com.scottyab.rootbeer.sample
 ```
 
-![Identification du package RootBeer](captures/06_package_name.jpg)
+<img width="987" alt="06_package_name" src="https://github.com/user-attachments/assets/b165a096-06b4-4080-9ceb-d7c176509f65" />
+
 
 ---
 
@@ -287,8 +286,9 @@ ROOTED*
 Cela signifie que l’application détecte que l’environnement Android est rooté.
 
 <p align="center">
-  <img src="captures/07_before_bypass_root_detected.jpg" alt="Détection root avant bypass" width="320">
+  <img width="320" alt="07_before_bypass_root_detected" src="https://github.com/user-attachments/assets/d54aa1d7-54d0-484d-a122-a1aa2f73fd4e" />
 </p>
+
 
 ---
 
@@ -367,7 +367,7 @@ Après avoir cliqué sur le bouton de test dans l’application, Frida intercept
 Ces logs montrent que le script Frida intercepte correctement les appels Java vers `File.exists()`.
 
 
-![Logs du bypass Java avec Frida](captures/08_frida_java_bypass_logs.jpg)
+<img width="992"  alt="08_frida_java_bypass_logs" src="https://github.com/user-attachments/assets/34bf68b0-db10-4596-a431-4ebc0a8d40bc" />
 
 ---
 
@@ -391,9 +391,8 @@ Le contrôle restant positif est :
 Ce résultat montre que le bypass Java fonctionne partiellement. Frida intercepte plusieurs vérifications, mais un contrôle spécifique continue de détecter le root.
 
 <p align="center">
-  <img src="captures/09_after_java_bypass.jpg" alt="Résultat après bypass Java" width="320">
+  <img width="320" alt="09_after_java_bypass" src="https://github.com/user-attachments/assets/d7c3242d-add5-4de5-b010-6757d346a061" />
 </p>
-
 
 ---
 
@@ -425,7 +424,8 @@ readlink()
 Ces fonctions natives peuvent être utilisées pour vérifier l’existence de fichiers liés au root au niveau système.
 
 
-![Traçage des appels natifs](captures/10_frida_trace_native_calls.jpg)
+<img width="915" alt="10_frida_trace_native_calls" src="https://github.com/user-attachments/assets/b22313a4-f747-4483-8660-51a34b08bb2d" />
+
 
 ---
 
@@ -490,7 +490,8 @@ Résultat attendu dans PowerShell :
 Ces logs montrent que les fonctions natives ont été interceptées par Frida.
 
 
-![Logs du bypass natif](captures/11_native_bypass_logs.jpg)
+<img width="915" alt="11_native_bypass_logs" src="https://github.com/user-attachments/assets/771b87a6-2b36-4e5e-8c11-cb99760171ba" />
+
 
 ---
 
@@ -514,7 +515,7 @@ Le contrôle restant positif est :
 Cela montre que le bypass est partiel. Les hooks Java et natifs permettent d’intercepter plusieurs mécanismes de détection, mais un contrôle spécifique reste actif.
 
 <p align="center">
-  <img src="captures/12_after_native_bypass.jpg" alt="Résultat après bypass Java et natif" width="320">
+  <img width="320" alt="12_after_native_bypass" src="https://github.com/user-attachments/assets/992b2559-272e-4f6b-8c63-1ce22e79e5a4" />
 </p>
 
 ---
