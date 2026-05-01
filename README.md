@@ -44,16 +44,16 @@ C:\Lab_Frida_Root_Bypass
 ├── captures
 │   ├── 01_frida_version.png
 │   ├── 02_adb_devices.png
-│   ├── 03_android_architecture.jpg
-│   ├── 04_push_frida_server.jpg
-│   ├── 05_frida_ps_apps.jpg
-│   ├── 06_rootbeer_package.jpg
-│   ├── 07_before_bypass_root_detected.jpg
-│   ├── 08_frida_java_bypass_logs.jpg
-│   ├── 09_after_java_bypass.jpg
-│   ├── 10_frida_trace_native_calls.jpg
-│   ├── 11_native_bypass_logs.jpg
-│   └── 12_after_native_bypass.jpg
+│   ├── 03_android_architecture.png
+│   ├── 04_push_frida_server.png
+│   ├── 05_frida_ps_apps.png
+│   ├── 06_rootbeer_package.png
+│   ├── 07_before_bypass_root_detected.png
+│   ├── 08_frida_java_bypass_logs.png
+│   ├── 09_after_java_bypass.png
+│   ├── 10_frida_trace_native_calls.png
+│   ├── 11_native_bypass_logs.png
+│   └── 12_after_native_bypass.png
 │
 └── README.md
 ```
